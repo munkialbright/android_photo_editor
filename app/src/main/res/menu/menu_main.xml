@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_photo_camera_black_24dp"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="CAMERA" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_edit_black_24dp"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="EDIT PHOTO" />
+
+    <item
+        android:id="@+id/action_open"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_open_in_browser_black_24dp"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="OPEN" />
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_save_black_24dp"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="SAVE" />
+
+</menu>

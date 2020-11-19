@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "30.0.2"
+    defaultConfig {
+        applicationId "munki.albright.androidinstagram"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.1'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // implementation(group: 'info.androidhive', name: 'imagefilters', version: '1.0.7', ext: 'aar')
+    implementation 'info.androidhive:imagefilters:1.0.7'
+
+    // dexter M permissions
+    implementation 'com.karumi:dexter:4.1.0'
+
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    // PhotoEditor library
+    implementation 'ja.burhanrashid52:photoeditor:0.2.1'
+
+    //Emojicon Text View to display emoji from String
+    implementation 'com.github.rockerhieu:emojicon:v1.4.2'
+
+    //Library for implementing image crop features
+    implementation 'com.github.yalantis:ucrop:2.2.2-native'
+}

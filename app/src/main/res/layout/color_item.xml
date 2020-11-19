@@ -1,0 +1,10 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/color_section"
+    android:padding="16dp"
+    app:cardBackgroundColor="@color/card_background_color"
+    app:cardCornerRadius="0dp"
+    android:layout_width="80dp"
+    android:layout_height="80dp">
+</android.support.v7.widget.CardView>
